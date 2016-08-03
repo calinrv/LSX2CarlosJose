@@ -1,0 +1,13 @@
+
+gnuplot> set "%Y%m%d"
+             ^
+         line 0: Unrecognized option.  See 'help set'.
+
+         line 0: illegal day of month
+
+         line 0: warning: Skipping data file with no valid points
+
+gnuplot> plot "/home/sysadmin/LSX2CarlosRojas/LSX2CALINRV2/tareas/Proyecto_Programado/problema2/full_datos/full.dat" using 1:2 with lines title "Monto Total"
+                                                                                                                                                             ^
+         line 0: x range is invalid
+

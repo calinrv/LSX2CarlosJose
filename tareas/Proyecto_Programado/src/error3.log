@@ -1,0 +1,41 @@
+sed: opción incorrecta -- «a»
+Uso: sed [OPCIÓN]... {guión-sólo-si-no-hay-otro-guión} [fichero-entrada]...
+
+  -n, --quiet, --silent
+                 suprime la muestra automática del espacio de patrones
+  -e guión, --expression=guión
+                 agrega el guión a la lista de órdenes para ejecutar
+  -f fichero-guión, --file=fichero-guión
+                 agrega el contenido del fichero guión a la lista de órdenes
+                 para ejecutar
+  --follow-symlinks
+                 sigue los enlaces simbólicos al procesar en el lugar
+  -i[SUFIJO], --in-place[=SUFIJO]
+                 editar archivos su sitio (crea copia de seguridad si se indica SUFIJO)
+  -l N, --line-length=N
+                 especifica la longitud de corte de línea deseado para
+                 la orden `l'
+  --posix
+                 desactiva todas las extensiones de GNU.
+  -r, --regexp-extended
+                 utiliza expresiones regulares extendidas en el guión.
+  -s, --separate
+                 considera los ficheros como separados en lugar de un solo
+                 flujo, largo y continuo.
+  -u, --unbuffered
+                 carga cantidades mínimas de datos de los ficheros de entrada
+                 y vacía los almacenamientos temporales de salida con más
+                 frecuencia
+  -z, --null-data
+                 separa las líneas con caracteres NUL
+      --help     muestra esta ayuda y termina
+      --version  muestra la información de la versión y termina
+
+Si no se proporciona una opción -e, --expression, -f, o --file option,
+entonces se toma el primer argumento que no sea opción como el guión sed
+a interpretar.  Todos los argumentos restantes son nombres de archivos
+de entrada; si no se especifican ficheros de entrada, entonces se lee
+la entrada estándar.
+
+Página web de sed de GNU: <http://www.gnu.org/software/sed/>.
+Ayuda general para usar software GNU: <http://www.gnu.org/gethelp/>.
